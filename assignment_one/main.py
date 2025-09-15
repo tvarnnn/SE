@@ -61,9 +61,9 @@ class SandwichMachine:
 
     def transaction_result(self, coins, cost):
         """Return True when the payment is accepted, or False if money is insufficient."""
-        if coins >= cost:
+        if (coins >= cost):
             change = round(coins - cost, 2)
-            if change > 0:
+            if (change > 0):
                 print(f"Here is ${change} in change.")
             print("Payment accepted.")
             return True
@@ -85,13 +85,13 @@ machine = SandwichMachine(resources)
 is_on = True
 while is_on:
     choice = input("What would you like? (small/medium/large/off): ").lower()
-    if choice == "off":
+    if (choice == "off"):
         is_on = False
-    elif choice in recipes:
+    elif (choice in recipes):
         sandwich = recipes[choice]
-        if machine.check_resources(sandwich["ingredients"]):
+        if (machine.check_resources(sandwich["ingredients"])):
             payment = machine.process_coins()
-            if machine.transaction_result(payment, sandwich["cost"]):
+            if (machine.transaction_result(payment, sandwich["cost"])):
                 machine.make_sandwich(choice, sandwich["ingredients"])
     else:
         print("Invalid option. Please choose small, medium, or large.")

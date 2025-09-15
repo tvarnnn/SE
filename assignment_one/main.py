@@ -83,7 +83,7 @@ class SandwichMachine:
 machine = SandwichMachine(resources)
 
 is_on = True
-while is_on:
+while (is_on):
     choice = input("What would you like? (small/medium/large/off): ").lower()
     if (choice == "off"):
         is_on = False

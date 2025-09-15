@@ -79,6 +79,7 @@ class SandwichMachine:
 
 #### I think I am trying to make as many areas to fix any important issues.
 print("Welcome to the Sandwich Machine!")
+print("We hope you enjoy our machine!")
 ### Running the machine ###
 machine = SandwichMachine(resources)
 

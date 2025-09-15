@@ -78,7 +78,7 @@ class SandwichMachine:
         print(f"Here is your {sandwich_size} sandwich! Enjoy!")
 
 #### I think I am trying to make as many areas to fix any important issues.
-
+print("Welcome to the Sandwich Machine!")
 ### Running the machine ###
 machine = SandwichMachine(resources)
 

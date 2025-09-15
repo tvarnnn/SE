@@ -77,7 +77,7 @@ class SandwichMachine:
             self.machine_resources[item] -= order_ingredients[item]
         print(f"Here is your {sandwich_size} sandwich! Enjoy!")
 
-
+#### I think I am trying to make as many areas to fix any important issues.
 
 ### Running the machine ###
 machine = SandwichMachine(resources)

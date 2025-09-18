@@ -10,7 +10,10 @@ class RayBank:
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
 
-    
+        self._account_number = account_number #Protected member | Tristan 
+        self.__routing_number = routing_number #Private member | Tristan 
+
+
     def deposit(self,deposit):
         if isinstance(deposit, (int,float)):
             self.current_balance += deposit

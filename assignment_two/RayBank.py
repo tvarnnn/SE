@@ -45,6 +45,13 @@ class SavingsAcc(RayBank):
             print("Not enough money, need at least 200 to maintain balance without harm of fees or limitation of services.")
         
 
+class checking_limitation(RayBank):
+    def checking(self):
+        if 
+
+
+
+
 
 customer1 = RayBank("Jane", 500, 100)
 customer2 = RayBank("Maxwell", 1000, 200)
